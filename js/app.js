@@ -80,3 +80,34 @@ const removeShows = () => {
     const shows = document.querySelectorAll('.show');
     shows.forEach(show => show.remove());
 };
+
+// ********************
+// EVENT LISTENERS
+// ********************
+searchForm.addEventListener('submit', async event => {
+    // removes all the shows before displaying new ones
+    removeShows();
+
+    // prevents the default behavior of the form
+    event.preventDefault();
+
+    const searchTerm = searchQuery.value;
+
+    if (searchTerm.length > 0) {
+        const h2 = document.createElement('h2');
+        h2.textContent = `Results for ${
+            searchTerm[0].toUpperCase() + searchTerm.slice(1)
+        }...`;
+        h2.classList.add('heading-secondary');
+        sectionShows.append(h2);
+    }
+
+    const response = await axios.get('https://api.tvmaze.com/search/shows', {
+        params: { q: searchTerm },
+    });
+
+    displayShows(response.data);
+
+    // clear the search input
+    searchQuery.value = '';
+});
