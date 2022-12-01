@@ -84,3 +84,84 @@ h1 {
     background-color: #076acd;
     color: #fff;
 }
+
+/*************************/
+/* SHOWS SECTION */
+/*************************/
+.section-shows {
+    padding: 6.4rem 0;
+}
+
+.shows {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 4.8rem;
+}
+
+.show {
+    width: min-content;
+    background-color: #076acd;
+    padding: 2.4rem;
+    border-radius: 10px;
+    transition: all 0.4s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.show:hover {
+    transform: scale(1.02);
+}
+
+.show img {
+    border-radius: 10px;
+    margin-bottom: 2.4rem;
+}
+
+.show h3 {
+    color: #fdca01;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    margin-bottom: 1.6rem;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.genre {
+    background-color: #fdca01;
+    color: #076acd;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 100px;
+}
+
+.btn-watch-now:link,
+.btn-watch-now:visited {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background-color: #fdca01;
+    color: #076acd;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.2rem 2.4rem;
+    border-radius: 10px;
+    transition: all 0.4s;
+    width: fit-content;
+    margin-top: auto;
+}
+
+.btn-watch-now:hover,
+.btn-watch-now:active {
+    background-color: #caa201;
+    color: #076acd;
+}
