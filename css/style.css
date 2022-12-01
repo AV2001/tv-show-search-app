@@ -34,3 +34,53 @@ h1 {
     font-size: 3.6rem;
     margin-bottom: 3.2em;
 }
+
+/*************************/
+/* SEARCH SECTION */
+/*************************/
+.section-search {
+    padding: 6.4rem 0;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.search-form input,
+.search-form button {
+    border: none;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+}
+
+.search-form input {
+    color: #076acd;
+    width: 50%;
+}
+
+.search-form input::placeholder {
+    color: #9cc3eb;
+    font-weight: 400;
+}
+
+.search-form input:focus {
+    outline: none;
+}
+
+.search-form button {
+    background-color: #fff;
+    color: #076acd;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #076acd;
+    color: #fff;
+}
