@@ -24,7 +24,7 @@ const displayShows = tvShows => {
         // create img element to display image
         const img = document.createElement('img');
         // display the image only if the url is present
-        img.src = tvShow.show.image ? tvShow.show.image.medium : './no-img.jpg';
+        img.src = tvShow.show.image ? tvShow.show.image.medium : './images/no-img.jpg';
         // append the image to the figure
         figure.append(img);
 
