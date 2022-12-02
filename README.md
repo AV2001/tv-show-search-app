@@ -7,3 +7,6 @@ Live application available [here](https://av2001.github.io/tv-show-search-app/).
 - HTML
 - CSS
 - JavaScript
+
+## What I Learned?
+The one takeaway from this project is that I learned to work with third-party API.
