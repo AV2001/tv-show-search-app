@@ -7,7 +7,7 @@ The live version of the application is available [here](https://av2001.github.io
 - CSS
 - JavaScript
 
-## What I Learned? 🤔
+## What Have I Learned? 🤔
 The one takeaway from this project is that I learned to work with a third-party API.
 
 ## Contact Me 📞
